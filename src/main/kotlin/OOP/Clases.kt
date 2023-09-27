@@ -5,7 +5,7 @@ class Clases {
 
 
     fun mainClases() {
-        var dog = Dog("Firulais", 70, "Mixed")
+        val dog = Dog("Firulais", 70, "Mixed")
         dog.showMe()
 
         dog.weight = 15

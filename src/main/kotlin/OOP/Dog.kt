@@ -5,7 +5,13 @@ class Dog(
     var weight: Int,
     val breed: String) {
 
-    fun bark() {
+    var activities = arrayOf("Walks")
+
+    init {
+        println("Init Dog")
+    }
+
+     fun bark() {
         println(if (weight < 20) "Yip" else "Woof!")
     }
 
@@ -13,6 +19,7 @@ class Dog(
         println(" Dog Name: $name")
         println("Dog Weight: $weight")
         println("Dog Breed: $breed")
+        println("Dog Activities: ${activities[0]}")
         println("Dog bark: ${bark()}")
     }
 }

@@ -12,22 +12,36 @@ class Functions {
         val message = myMessage("Hello world")
         println(message)
 
-        showForInData()
-        showForUntilData()
-        showForDownTo()
-        showForSkypeInRange()
-        showForArrays()
-        showForArraysIndex()
+        showNullValue()
+
+
         gameRockScissorsPaper()
     }
     //Unit is like void in Java is optional
     fun showNumber(num: Int): Unit {
         //TODO("Not yet implemented")
 
-        val y = num.toLong()
+        val y = num.toInt()
+
 
         // var y1 = (Long) num
         println("values: $y")
+    }
+
+    fun showNullValue() {
+        var number : Int?
+        number = null
+
+        if(number == null) {
+            println("Is null")
+        }
+
+        //number = 10
+
+        number.let {
+            println("NOt NUll $number")
+        }
+
     }
 
     fun showNumber(numA: Int, numB: Int) {
@@ -52,36 +66,7 @@ class Functions {
         return message
     }
      //show all Range
-     fun showForInData() {
-         for (x in 1..3) println("showForInData$x")
 
-     }
-     //show all Range except the last
-    fun showForUntilData() {
-        for (x in 1 until 10) println("showForUntilData$x")
-    }
-
-    fun showForDownTo() {
-        for (x in 3 downTo  1) println("showForDownTo$x")
-    }
-
-    fun showForSkypeInRange() {
-        for (x in 1..10 step 2) println("showForSkypeInRange$x")
-    }
-
-    fun showForArrays() {
-        val hobbits = arrayOf("Frodo", "Sam", "Merry", "Pippin")
-        var x = 0
-        for (hobbit in hobbits) println("${hobbit} is a good Hobbit name")
-    }
-
-    fun showForArraysIndex() {
-        val hobbits = arrayOf("Frodo", "Sam", "Merry", "Pippin")
-        var x = 0
-        for ((index, hobbit) in hobbits.withIndex()) {
-            println("${hobbit} is a good Hobbit name. His index is $index")
-        }
-    }
 
     fun gameRockScissorsPaper() {
         val options = arrayOf("Rock", "Paper", "Scissors")
