@@ -1,3 +1,4 @@
+import OOP.Clases
 import basics.Basic
 import basics.Functions
 
@@ -11,6 +12,8 @@ fun callExamples() {
     //basic.mainBasic()
 
     val functions = Functions()
-    functions.mainFunction()
+    //functions.mainFunction()
+    val clases = Clases()
+    clases.mainClases()
 
 }

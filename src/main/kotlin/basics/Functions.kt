@@ -89,7 +89,7 @@ class Functions {
         val userChoice = getUserChoice(options)
         printResult(userChoice, gameChoice)
     }
-
+    // if the function has a single line, we van use = operator instead of {}
     fun getGameChoice(optionsParams: Array<String>) = optionsParams[(Math.random() * optionsParams.size).toInt()]
 
     fun getUserChoice(optionsParams: Array<String>) : String {
