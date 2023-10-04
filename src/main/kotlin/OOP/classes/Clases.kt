@@ -1,4 +1,4 @@
-package OOP
+package OOP.classes
 
 
 class Clases {
@@ -18,5 +18,12 @@ class Clases {
         songTwo.play()
         songTwo.stop()
         songThree.play()
+
+        val drumKit = DrumKit(true,true)
+        drumKit.playSnare()
+        drumKit.playTopHat()
+        drumKit.hasSnare = false
+        drumKit.playTopHat()
+        drumKit.playSnare()
     }
 }

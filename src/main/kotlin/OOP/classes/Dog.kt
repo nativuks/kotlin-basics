@@ -1,4 +1,4 @@
-package OOP
+package OOP.classes
 
 class Dog(
     val name: String,
@@ -6,6 +6,8 @@ class Dog(
     val breed: String) {
 
     var activities = arrayOf("Walks")
+    val weighInKg: Double
+        get() = weight / 2.2
 
     init {
         println("Init Dog")
